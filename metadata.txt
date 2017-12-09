@@ -1,0 +1,18 @@
+
+
+Description : 'Produces up to date CRIX plot'
+
+Keywords : 
+- graphical representation
+- plot 
+- time-series
+- data visualization
+
+See also : 'crix, econ_arima, econ_crix, econ_garch, econ_vola'
+
+Author : Alisa Kolesnikova
+
+Submitted : Thur, December 09 2017 by Raphael Reule
+
+Datafile : 'http://crix.hu-berlin.de/data/crix.json'
+
