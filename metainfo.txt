@@ -1,14 +1,16 @@
-Name of Quantlet:  Cryptoplots.R
+Name of Quantlet:  CrixToDate.R
  
 Published in:      Pythia 
   
 Description:       Shows basic graphs of CRIX values and monthly agregated std of CRIX returns
  
-Keywords:          CRIX, plot, time-series, financial, crypto
+Keywords:          CRIX, plot, time-series, financial, crypto, graphical representation, data visualization
+
+See also : crix, econ_arima, econ_crix, econ_garch, econ_vola
 
 Author:            Alisa Kolesnikova
   
 Submitted:         Wed, December 18 2017 by Raphael Reule
   
-Datafile:          data sourced from online json file
+Datafile:          data sourced from online json file, 'http://crix.hu-berlin.de/data/crix.json'
   
