@@ -1,0 +1,14 @@
+Name of Quantlet:  Cryptoplots.R
+ 
+Published in:      Pythia (Raphael Reule)
+  
+Description:       Shows basic graphs of CRIX values and monthly agregated std of CRIX returns
+ 
+Keywords:          CRIX, plot, time-series, financial, crypto
+
+Author:            Alisa Kolesnikova
+  
+Submitted:         Wed, December 12 2017 by Raphael Reule
+  
+Datafile:          data sourced fromonline json file
+  
