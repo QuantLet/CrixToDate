@@ -14,13 +14,15 @@ plot(crix, type = "l", col = "blue3", lwd = 3, xlab = "Date", ylab = "Performanc
 
 require(zoo)
 #getting returns
-ret.table = data.frame(date = crix$date[-1], returns = diff(log(crix$price)))
-ret.table$MY = as.yearmon(ret.table$date, "%y-%m")
-aggr.month.returns = aggregate(returns ~ MY, ret.table, sd)
-aggr.month.returns$returns=aggr.month.returns$returns-mean(aggr.month.returns$returns)
-aggr.month.returns$MY=as.Date(aggr.month.returns$MY)
 
-plot(aggr.month.returns, type = "l", col = "grey", xaxt="n", lwd = 3, xlab = "Date", 
-     ylab = "Monthly aggregated returns volatility")
-axis(1,at=aggr.month.returns$MY,labels=format(aggr.month.returns$MY,"%Y-%m"),las=1)
-abline(h = 0)
+returns= data.frame(date = as.yearmon(crix$date[-1], "%y-%m"), returns = diff(log(crix$price)))
+agg.month= aggregate(returns ~ MY, ret.table, sd)
+agg.days = aggregate(returns ~ MY, ret.table, length)
+agg.month$days=days$returns
+agg.month$MY=as.Date(agg.month$MY)
+colnames(agg.month)=c("date", "month.std", "days")
+agg.month$monthlyvola=sqrt(agg.month$days)*agg.month$month.std*100
+
+plot(agg.month$date, agg.month$monthlyvola, type = "l", col = "grey",lwd = 3, xlab = "Date", 
+ylab = "Monthly aggregated returns volatility")
+axis(1,at=agg.month$date,labels=format(agg.month$date,"%Y-%m"),las=1)
