@@ -26,4 +26,4 @@ agg.month$monthlyvola = sqrt(agg.month$days)*agg.month$month.std*100
 
 plot(agg.month$date, agg.month$monthlyvola, type = "l", col = "grey",lwd = 3, xlab = "Date", 
 ylab = "Monthly aggregated returns volatility")
-axis(1,at = agg.month$date,labels=format(agg.month$date,"%Y-%m"),las = 1)
+axis(1,at = agg.month$date,labels = format(agg.month$date,"%Y-%m"),las = 1)
