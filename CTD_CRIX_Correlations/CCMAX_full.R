@@ -65,6 +65,7 @@ for (year in years) {
 
 }
 
+       
 # For whole period
 max_cryptos = apply(CAP,2,mean,na.rm=T)
 max_cryptos = tail(sort(max_cryptos),10)
@@ -96,6 +97,7 @@ for (year in years) {
   dev.off()
 }
 
+       
 # Rolling window correlation
 window_length = 180
 
@@ -147,18 +149,21 @@ names(color)    = names(max_cryptos)
               ylab ="mean log returns")
          dev.off()
        }
+      
+       
 # Build and save as pdf Bar plot for standart deviation/volatility
 StD_max = apply(RET_max_xts[,c(1:10, 14, 22)], 2, function(x){sd(x, na.rm = T)})
 pdf(file = "Volatility_max.pdf")
 barplot(StD_max, col = "red3", border = F)
 dev.off()
 
+       
 # Build and save as pdf Bar plot for Sharpe ratios
 Sharpe_max = apply(RET_max_xts[,c(1:10, 14, 22)], 2, function(x){mean(x, na.rm = T)/sd(x, na.rm = T)})
 pdf(file = "SHARPE_max.pdf")
 barplot(Sharpe_max, col = "blue3", border = F)
 dev.off()
 
+       
 #Save data
 save.image(file = "CC_MAX.RData")
-
