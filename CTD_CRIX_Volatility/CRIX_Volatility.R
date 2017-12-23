@@ -1,4 +1,3 @@
-
 # Graph CRIX components
 # volatility of logreturns of CRIX (monthly aggregated standard deviation)
 
