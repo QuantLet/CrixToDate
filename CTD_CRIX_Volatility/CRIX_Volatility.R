@@ -1,7 +1,14 @@
+require(jsonlite)
+require(curl)
+json_file <- "http://crix.hu-berlin.de/data/crix.json"
+crix <- fromJSON(json_file)
+crix$date <- as.Date(crix$date)
+
+require(zoo)
+
 # Graph CRIX components
 # volatility of logreturns of CRIX (monthly aggregated standard deviation)
 
-require(zoo)
 #getting returns
 ret.table = data.frame(date = crix$date[-1], returns = diff(log(crix$price)))
 ret.table$MY = as.yearmon(ret.table$date, "%y-%m")
