@@ -1,10 +1,13 @@
 # Graph CRIX
 
 require(jsonlite)
-require(curl)
-json_file <- "http://crix.hu-berlin.de/data/crix_hf.json"
-crix <- fromJSON(json_file)
+require(zoo)
+crix <- read.csv("crixdata.csv", header=TRUE, sep=";")
 
+##require(jsonlite)
+##require(curl)
+##json_file <- "http://crix.hu-berlin.de/data/crix_hf.json"
+##crix <- fromJSON(json_file)
 
 crix$date <- as.POSIXct(crix$date, format="%Y-%m-%d  %H:%M:%S")
 
