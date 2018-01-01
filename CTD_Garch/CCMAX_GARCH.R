@@ -1,4 +1,4 @@
-setwd("C:/Users/rphi/Documents/__PYT/PythiaR/GARCH")
+setwd("~/Documents/PythiaR/GARCH")
 
 rm(list=ls(all=TRUE))
 graphics.off()
