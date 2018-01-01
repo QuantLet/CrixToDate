@@ -6,3 +6,4 @@ Produces:
 - cc skewness plots
 - cc correlation plots
 - cc R fGARCH plots 
+- SHA256/Network R codes
