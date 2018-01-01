@@ -1,4 +1,4 @@
-setwd("C:/Users/rphi/Documents/__PYT/PythiaR/CTD_CRIX_Volatility/CC_Vola")
+setwd("~/Documents/PythiaR/CTD_Volatility/CC_Vola")
 
 #install and load packages
 libraries = c("readxl", "xtable", "igraph", "zoo", "igraph", 
