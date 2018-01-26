@@ -98,6 +98,16 @@ summary(fg22)
 
 plot(fg11, which="ask")
 
+       
+       
+## squared plot
+dev.new(height=10,width=10)
+plot(fg11, which=13)
+       
+## squared plot alternative
+plot(fg11, which=13, asp=1, xlim=c(-5,5), ylim=c(-10,10), axes=T, asp = 1, add=TRUE)
 
-# Save data
+
+    
+# Opt Save data
 save.image(file = "CC_MAX_GARCH.RData")
