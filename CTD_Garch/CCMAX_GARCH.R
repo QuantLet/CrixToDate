@@ -107,6 +107,33 @@ plot(fg11, which=13)
 ## squared qq plot alternative
 plot(fg11, which=13, asp=1, xlim=c(-5,5), ylim=c(-10,10), axes=T, asp = 1, add=TRUE)
 
+       
+       
+
+##>>normline
+dev.new(height=10,width=10)
+qqnorm(y=fg11@residuals, col = "steelblue", xlim=c(-3,3), ylim=c(-3,3), main="BTC - qnorm QQ Plot", ylab="Sample Quantiles", xlab="Theoretical Quantiles");
+qqline(fg11@residuals, col="black", lwd=2)
+
+
+##
+qqnorm(y=fg11@residuals, main="QQ PLot", ylab="Sample Quantiles", xlab="St Norm Quantiles");
+qqline(fg11@residuals, col="red", lwd=2)
+
+
+##>>diagline
+dev.new(height=10,width=10)
+qqnorm(y=fg11@residuals,  col = "steelblue", xlim=c(-3,3), ylim=c(-3,3), main="BTC - qnorm QQ Plot", ylab="Sample Quantiles", xlab="Theoretical Quantiles")
+abline(a=0, b=1, col="black", lwd=2)
+
+
+##
+qqnorm(y=fg11@residuals, xlim=c(-5,10), ylim=c(-5,10), main="QQ PLot", ylab="Sample Quantiles", xlab="St Norm Quantiles")
+abline(a=0, b=1, col="red", lwd=2)
+
+
+
+
 
     
 # Opt Save data
