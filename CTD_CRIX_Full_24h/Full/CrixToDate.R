@@ -18,7 +18,7 @@ plot(crix, type = "l", col = "blue3", lwd = 3, xlab = "Date", ylab = "Performanc
 # Graph CRIX from CRIXdata.csv (file)
 
 # install and load packages
-libraries = c("curl", "jsonlite", "zoo")
+libraries = c("curl", "zoo")
 lapply(libraries, function(x) if (!(x %in% installed.packages())) {
   install.packages(x)
 })
