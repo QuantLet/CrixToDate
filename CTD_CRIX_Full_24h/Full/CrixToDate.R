@@ -5,6 +5,7 @@ libraries = c("jsonlite", "curl", "zoo")
 lapply(libraries, function(x) if (!(x %in% installed.packages())) {
   install.packages(x)
 })
+lapply(libraries, library, quietly = TRUE, character.only = TRUE)
        
 json_file <- "http://crix.hu-berlin.de/data/crix.json"
 crix <- fromJSON(json_file)
@@ -22,6 +23,7 @@ libraries = c("curl", "zoo")
 lapply(libraries, function(x) if (!(x %in% installed.packages())) {
   install.packages(x)
 })
+lapply(libraries, library, quietly = TRUE, character.only = TRUE)
 
 crix <- read.csv("crixdata.csv", header=TRUE, sep=";")
 crix$date = as.Date(crix$date)
