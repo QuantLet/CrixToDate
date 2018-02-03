@@ -1,4 +1,4 @@
-# Graph CRIX
+# Graph CRIX from CRIX.berlin (website)
 
 # install and load packages
 libraries = c("curl", "jsonlite", "zoo")
@@ -14,8 +14,8 @@ plot(crix, type = "l", col = "blue3", lwd = 3, xlab = "Date", ylab = "Performanc
 
 
 
-### Alternative
-# Graph CRIX
+################################ Alternative
+# Graph CRIX from CRIXdata.csv (file)
 
 # install and load packages
 libraries = c("curl", "jsonlite", "zoo")
