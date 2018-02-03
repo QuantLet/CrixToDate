@@ -1,7 +1,7 @@
 # Graph CRIX from CRIX.berlin (website)
 
 # install and load packages
-libraries = c("curl", "jsonlite", "zoo")
+libraries = c("jsonlite", "curl", "zoo")
 lapply(libraries, function(x) if (!(x %in% installed.packages())) {
   install.packages(x)
 })
