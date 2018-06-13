@@ -13,4 +13,6 @@ Author:            Alisa Kolesnikova (CRIX Data), Alla Petukhina (Crypto Data)
 Submitted:         Wed, December 23 2017 by Raphael Reule
   
 Datafile:          data sourced from online CRIX json files and historic data provided
+
+
   
