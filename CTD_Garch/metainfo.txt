@@ -1,0 +1,18 @@
+Name of Quantlet:  CrixToDate
+ 
+Published in:      ""
+  
+Description:       Produces GARCH plots based on historical hf CRIX data
+ 
+Keywords:          CRIX, plot, time-series, financial, crypto, graphical representation, data visualization, volatility
+
+See also :         crix, econ_arima, econ_crix, econ_garch, econ_vola
+
+Author:            Raphael Reule
+  
+Submitted:         Wed, December 23 2017 by Raphael Reule
+  
+Datafile:          data sourced from online CRIX json files and historic data provided
+
+
+  

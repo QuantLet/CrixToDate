@@ -8,7 +8,7 @@ Keywords:          CRIX, plot, time-series, financial, crypto, graphical represe
 
 See also :         crix, econ_arima, econ_crix, econ_garch, econ_vola
 
-Author:            Alisa Kolesnikova (CRIX Data), Alla Petukhina (Crypto Data)
+Author:            Alla Petukhina, Raphael Reule
   
 Submitted:         Wed, December 23 2017 by Raphael Reule
   

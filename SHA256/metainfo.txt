@@ -1,0 +1,18 @@
+Name of Quantlet:  CrixToDate
+ 
+Published in:      ""
+  
+Description:       SHA 256 R Code
+ 
+Keywords:          hash, algorithm
+
+See also :         crix, econ_arima, econ_crix, econ_garch, econ_vola
+
+Author:            Raphael Reule
+  
+Submitted:         Wed, December 23 2017 by Raphael Reule
+  
+Datafile:          R Script
+
+
+  
