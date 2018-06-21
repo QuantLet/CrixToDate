@@ -1,4 +1,4 @@
-Name of Quantlet:  CrixToDate
+Name of Quantlet:  CCMAX_GARCH
  
 Published in:      ""
   

@@ -1,4 +1,4 @@
-Name of Quantlet:  CrixToDate
+Name of Quantlet:  CRIX_Volatility_28122017
  
 Published in:      ""
   

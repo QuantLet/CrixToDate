@@ -1,4 +1,4 @@
-Name of Quantlet:  CrixToDate
+Name of Quantlet:  SHA256_Rcode
  
 Published in:      ""
   

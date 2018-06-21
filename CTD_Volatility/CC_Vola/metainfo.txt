@@ -1,4 +1,4 @@
-Name of Quantlet:  CrixToDate
+Name of Quantlet:  CC_Vola
  
 Published in:      ""
   

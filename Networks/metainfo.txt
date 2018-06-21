@@ -1,4 +1,4 @@
-Name of Quantlet:  CrixToDate
+Name of Quantlet:  Network_Plots
  
 Published in:      ""
   
