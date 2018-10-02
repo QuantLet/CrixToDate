@@ -4,7 +4,7 @@
 
 ```yaml
 
-Name of Quantlet:  CrixToDate24h
+Name of Quantlet:  CrixToDate_24h
  
 Published in:      ""
   
