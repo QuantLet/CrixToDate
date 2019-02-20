@@ -31,6 +31,13 @@ plot(crix$date, log(crix$price), type = "l", col = "steelblue", lwd = 2, xlab = 
 axis.Date(1,at = seq(min(crix$date),max(crix$date),by = "6 mon"), format = "%m-%Y")
 title(ylab = "Performance of log(CRIX)", line = 2, cex.lab = 2)
 
+# Log Returns Crix
+plot(crix$date[-1], diff(log(crix$price)), type = "l", col = "steelblue", lwd = 2, xlab = "Date", ylab = "", cex.lab = 2, xaxt = "n")
+axis.Date(1,at = seq(min(crix$date),max(crix$date),by = "6 mon"), format = "%m-%Y")
+title(ylab = "Log returns of CRIX", line = 2, cex.lab = 2)
+
+
+
 
 
 
